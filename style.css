@@ -1,0 +1,229 @@
+.dropdown-menu[data-bs-popper]{
+    left:-38px !important;
+    padding: 0;
+}
+
+a{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-size: 40px !important;
+    color: rgb(255, 230, 7) !important;
+    font-family: 'Monoton', cursive !important;
+    padding-left: 30px;
+}
+.navbar{
+    padding: 0px 0px !important;
+}
+
+
+/*Carousel*/
+
+.carousel-inner > .carousel-item > img{
+    margin-top: 60px;
+   height: 100vh;    
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+/* footer */
+footer{
+	border-top: 1px solid #C99D66; /* primary-color */
+	text-align:center;
+	padding:30px 10px;
+	line-height: 1.6em;
+	font-size:0.8em;
+	background-color: #212529;/* primary color*/
+	color: #fff;
+}
+
+footer a{
+	color:#fff; /* secondary-color*/
+}
+
+footer a:hover{
+	color:#C99D66; /* light seconday color*/	
+}
+
+footer .credits {
+	max-width:300px;
+	margin:auto;
+}
+
+footer .credits a img {
+  -o-transition: opacity .2 ease-in;
+  -ms-transition: opacity .2s ease-in;
+  -moz-transition: opacity .2s ease-in;
+  -webkit-transition: opacity .2s ease-in;
+  transition: opacity .2s ease
+}
+
+footer .credits a img:hover {
+	opacity:0.6;
+}
+
+footer .social-cont .social-list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+footer .social-cont .social-list > li {
+	margin: 8px 8px 8px 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 32px;
+	width: 32px;
+	border-radius: 6em;
+	background-color:#F0776C; /* secondary-color*/
+}
+
+footer .social-cont .social-list li img {
+	width: 32px
+}
+
+footer .social-cont .social-list > li:hover {
+background:#FF968C; /* light seconday color*/		
+}
+
+
+
+
+
+/*  *****  JSPage.html ***** */
+.main_container{
+    margin-top: 100px;
+}
+.main_container > h1{
+    margin-top: 40px;
+}
+hr{
+    margin: 30px 0 !important;
+}
+
+span{
+    font-weight: bolder;
+}
+.esempio{
+    background-color: #C99D66;
+    padding: 10px;
+}
+
+/* Variabili*/
+#variabili{
+display: none;}
+
+.chiudiVariabili {
+    position: fixed;
+    bottom: 0;
+    margin: 20px 0;
+}
+
+
+
+/*Valori primitivi*/
+
+#primitivi{
+    display: none;
+}
+.chiudiPrimitivi{
+    position: fixed;
+    bottom: 0;
+    margin: 20px 0;
+}
+.primitivi_section{
+margin-top: 20px;
+}
+
+
+/*Valori di confronto*/
+
+#valoriDiConfronto{
+    display: none;
+}
+
+.chiudiOperatori{
+   
+    margin: 20px 0;
+}
+
+/*Commenti*/
+
+#commenti{
+    display: none;
+}
+.chiudiCommenti{
+    
+    margin: 20px 0;
+}
+
+/*Array*/
+#array{
+    display: none;
+}
+.chiudiArray{
+    position: fixed;
+    bottom: 0;
+    margin: 20px 0;
+}
+
+/* Oggetti */
+
+#oggetti{
+    display:none
+}
+.chiudiOggetti{
+    position: fixed;
+    bottom:0;
+    margin: 20px 0;
+}
+
+
+/*Funzioni*/
+
+#funzioni{
+    display: none;
+}
+.chiudiFunzioni{
+    position: fixed;
+    bottom:0;
+    margin: 20px 0;
+ 
+}
+
+/*Cicli */
+#cicli{
+    display: none;
+}
+.chiudiCicli{
+    position: fixed;
+    bottom:0;
+    margin: 20px 0;
+ 
+}
+
+
+
+
+.method{
+    text-decoration: underline;
+    background-color: yellow;
+    padding: 5px;
+}
+
+
+
+/* Card */
+
+.card{
+    display:inline-block !important;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/*  *****  JSPage.html ***** */

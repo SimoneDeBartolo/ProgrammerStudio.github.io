@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>ProgrammerStudio</title>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi sono</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Aggiornamenti
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item bg-dark text-light" href="#" >Espressioni regolari</a></li>
+                </ul>
+              </li>              
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--navbar-->
+
+
+<!--Main_container-->
+<div class="main_container ">
+    <div class="introduction text-center">
+    <h1>Javascript : il motore della programmazione web</h1>
+    <h5>Con questa breve guida, cerco di elencare brevemente le nozioni base del linguaggio di programmazione più conosciuto</h5>
+
+    <hr>
+</div>
+
+
+
+
+<!--Card-->
+<div class="cards_container text-center">
+<div class="card" style="width: 18rem;">
+    <img src="./VARIABILI.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Variabili</h5>
+      <p class="card-text">Un primario passaggio per capire le variabili è comprendere cosa sia lo scope.</p>
+      <a href="#variabili" class="btn btn-primary btn_var">Scopri di più!</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="./VALORI PRIMITIVI.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Valori primitivi</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#primitivi" class="btn btn-primary primitivi">Scopri di più!</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="./VALORI DI CONFRONTO.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Valori di confronto</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#valoriDiConfronto" class="btn btn-primary operatori">Scopri di più!</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="./COMMENTI.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Commenti</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#commenti" class="btn btn-primary commenti">Scopri di più!</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="./ARRAY.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Array</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#array" class="btn btn-primary array">Scopri di più!</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="./OGGETTI.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Oggetti</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#oggetti" class="btn btn-primary oggetti">Scopri di più!</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="./FUNZIONI.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Funzioni</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#funzioni" class="btn btn-primary funzioni">Scopri di più!</a>
+    </div>
+  </div> 
+
+  <div class="card" style="width: 18rem;">
+    <img src="./CICLI.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cicli</h5>
+      <p class="card-text">Possiamo definirli come i colori primari, da cui miscuglio nasce un'opera d'arte</p>
+      <a href="#cicli" class="btn btn-primary cicli">Scopri di più!</a>
+    </div>
+  </div> 
+
+</div>
+<!--Card-->
+
+
+<!--Variabili-->
+
+<div id="variabili">
+    <h3>Variabili & Scope</h3>
+    <p>Le variabili in javascript possono essere descritte come dei contenitori in cui all'interno andremo ad immettere dati.</p>
+    <p>Le variabili si distinguono in 3 tipi : <span>var</span>,<span>let</span>, <span>const</span> .</p>
+    <p>Ma prima di andare a parlare dei singoli contenitori è bene andare a specificare lo <span style="font-weight: bolder;">scope</span>. <br>
+        In Javascript lo scope non è nient'altro che un blocco (o una zona) specifico di codice, che si differenzia dagli altri blocchi/zone. 
+        Lo scope globale è la zona in cui viene eseguito il codice Javascript nella sua interezza, ma questa zona a sua volta può avere 
+        (e nella maggior parte dei casi ha) svariate sotto-zone/sotto-blocchi di codice. Ad esempio, una variabile globale dichiarata in un 
+        punto qualsiasi dello script, dal suo inizio alla sua fine, è definita nello scope globale:</p>
+    <p classe="esempio">var myVar = "hello";</p>
+    <p>Se invece una variabile è definita in un ciclo, o in un blocco di codice esplicito (che si produce avviluppando le righe di codice in parentesi graffe "{" e "}"), 
+        lo scope viene definito scope di blocco, ad esempio:</p>
+        <p class="esempio">for(var myVar = 0; myVar < 10; myVar++) {<br>
+            // scope del blocco for <br>
+            console.log(myVar;) <br>
+          } <br>
+          <br>
+          while(x < y) { <br>
+            // scope del blocco while <br>
+          } <br>
+          <br>
+          { <br>
+            var myVar = "hello"; <br>
+            // scope del blocco esplicito <br>
+          }</p>
+    <p>Lo scope locale è invece quella particoalre zona di codice che è definita all'interno delle funzioni e dei metodi degli oggetti:</p>
+    <p class="esempio">function myFunctionName() { <br>
+        // scope locale della funzione myFunctionName <br>
+        var x, y, z; <br>
+      } <br>
+      
+      var myObjectName = { <br>
+        'myMethodName': function() { <br>
+          // scope locale del metodo myObjectName <br>
+          var x, y, z; <br>
+        } <br>
+      }</p>
+
+      <h5 >Scope globale vs Scope di blocco</h5>
+      <p>Per capire la differenza fondamentale tra i due identificatori di variabili, 
+          possiamo dire molto sinteticamente che "var" viene utilizzato quando non abbiamo necessità di uno scope locale o uno 
+          scope di blocco, il che significa che la variabile può essere ridichiarata ed utilizzata senza problemi all'interno 
+          dello script, mentre "let" viene utilizzato quando abbiamo necessità di operazioni in uno scope locale o di blocco.
+           In questo caso, variabili "let" con lo stesso namespace di altre variabili let dichiarate in un blocco differente,
+            sono perfettamente legali, a differenza di quelle dichiarate con "var" che verranno sovrascritte. 
+            Vediamo un semplice esempio:</p>
+            <p class="esempio">let x = 1; <br>
+<br>
+                if (x === 1) {<br>
+                  let x = 2;<br>
+                <br>
+                  // output: 2 <br>
+                  console.log(x); <br>
+                } <br>
+                <br>
+                // output: 1 <br>
+                console.log(x);</p>
+    <p>In questo codice la variabile "di blocco" chiamata "x" NON può essere utilizzata globalmente e dunque ridichiarata accidentalmente.
+         Questa distinzione permette un più ampio respiro allo sviluppatore Javascript, che possiede ora un controllo totale sulla natura, sulla tipologia e sul comportamento delle variabili che va a definire nella sua applicazione.</p>
+    <p>Un comportamento ingannevole per lo sviluppatore novizio può essere rappresentato in questo senso dai loop, come il loop for. Ricorda che il loop definisce uno scope di blocco, dunque una variabile "var" manterrà l'ultimo valore impostato dal ciclo:</p>
+    <p class="esempio">var myvalue = 0; <br>
+        for (var myvalue = 10; myvalue < 100; myvalue+=10) { <br>
+          // output 10 20 30 40 50 60 70 80 90 100  <br>
+          console.log( myvalue ); <br>
+        } <br>
+        <br>
+        // output 100 <br>
+        console.log( myvalue );</p>
+        <p>mentre la variabile "let" sarà inalterata, a causa della sua natura dipendente dagli scope di blocco:</p>
+        <p class="esempio">let myvalue = 0; <br>
+            for (let myvalue = 10; myvalue < 100; myvalue+=10) { <br>
+              // output 10 20 30 40 50 60 70 80 90 100  <br>
+              console.log( myvalue ); <br>
+            } <br>
+            <br>
+            // output 0 <br>
+            console.log( myvalue );</p>
+            <a href="#" class="btn btn-primary chiudiVariabili ">Chiudi</a>
+
+</div>
+
+<!--Variabili-->
+
+
+<!--Valori Primitivi-->
+<div id="primitivi">
+     <h3>Valori Primitivi</h3>
+     <p>In javascript possiamo distinguere due tipi di gruppi di dato fondamentali: gli oggetti e i <span>valori primitivi</span></p>
+     <p>Questi ultimi si distinguono in :</p>
+     <ul class="list-group list-group-flush">
+         <li class="list-group-item">Stringhe</li>
+         <li class="list-group-item">Booleani</li>
+         <li class="list-group-item">Numeri</li>
+         <li class="list-group-item">Undefined</li>
+         <li class="list-group-item">Null</li>
+
+     </ul>
+     <div class="primitivi_section">
+     <h4>STRINGHE</h4>
+     <p>In ogni linguaggio di programmazione, una stringa è una sequenza di caratteri usati per rappresentare un testo.</p>
+     <p>In JavaScript una stringa può essere delimitata da apici singoli ', apici doppi " e backtick o accenti gravi ` e come 
+         tutte le altre primitive JavaScript mette a disposizione un oggetto che permette di effettuare operazioni di mutazione 
+         o per controllarne, ad esempio, la lunghezza (numero di caratteri presenti).</p>
+         <p class="esempio"> let mioNome="Simone" <span style="color: #777;">//doppi apici</span><br>
+        let mioCognome='De Bartolo'<span style="color: #777;">//singoli apici</span> <br>
+        let miaEmail=`simone.dbr@live.it` <span style="color: #777;">//back tick</span>
+        </p>
+        <h4>BOOLEANI</h4>
+        <p>Gli elementi booleani, in javascript sono semplicemente due valori: <span>True</span> o <span>False</span>. La gran parte delle volte vengono usate nelle condizioni come ad esempio l'IF</p>
+        <p class="esempio">let nome="Simone" <br>
+            if(nome.length > 3){ <br>
+                console.log(true) <br>
+            }else{ <br>
+                console.log(false) <br>
+            }
+
+
+        </p>
+        <h4>NUMERI</h4>
+        <p>Number, supporta valori in double-precision 64-bit binary format IEEE 754, i quali in pratica sono numeri che 
+            spaziano tra -(2 ^ 53 - 1) a (2 ^ 53 + 1). A differenza di altri linguaggi che prevedono una differenza di 
+            tipo tra numeri con la virgola (float) o interi (integer) per JavaScript è tutto racchiuso sotto Number. 
+            Oltre a ciò il tipo di dato supporta anche tre valori simbolici: +Infinity, -Infinity e NaN (Not a Number).</p>
+        <h4>UNDEFINED</h4>
+        <p>Una variabile alla quale non è stato assegnato alcun valore è definita come undefined. Se null è considerato 
+            il rappresentante di un valore volontariamente mancante, undefined è sicuramente il rappresentante dei valori
+             involontariamente mancanti.</p>
+        <h4>NULL</h4>
+        <p>La primitiva Null ha solo un valore null. Rappresenta un valore volontariamente assente o per meglio dire rappresenta una 
+            referenza che punta, intenzionalmente, a un valore inesistente. Se utilizzato in una condizione booleana, il valore 
+            di null è false.</p>
+    <a href="#" class="btn btn-primary chiudiPrimitivi">Chiudi</a>
+</div>
+
+</div>
+    <!--Valori Primitivi-->
+
+<!--Valori di confronto-->
+    <div id="valoriDiConfronto">
+        <h3>Valori di confronto</h3>
+        <p>I valori di confronto sono quegli specifici elementi che ci permettono di capire come confrontare due valori di variabili.</p>
+        <p>I valori di confronto sono i seguenti:</p>
+        <p class="esempio">
+            == // uguale a <br>
+            === // pari valore e pari tipo <br>
+            != // non uguale <br>
+            !== // non uguale o di diverso tipo <br>
+            > // maggiore di <br>
+            < // minore di <br>
+            >= // maggiore uguale di <br>
+            <= // minore uguale di  <br>
+        
+
+         </p>
+         <p>Inoltre abbiamo anche gli operatori di confronto:</p>
+         <p class="esempio">
+             && // Operatore AND. In un confronto tra due opzioni, con quest'operatore logico, entrambe le condizioni devono essere vere; <br>
+             || // Operatore OR. In questo caso, in un confronto tra due condizioni, almeno una deve essere vera; <br>
+             ! // Operatore NOT. Messa davanti ad un'espressione la nega.
+
+         </p>
+         <a href="#" class="btn btn-primary chiudiOperatori">Chiudi</a>
+
+    </div>
+    <!--Valori di confronto-->
+
+
+
+    <!--Commenti-->
+<div id="commenti">
+    <h3>Commenti</h3>
+    <p>I commenti in javascript sono un utile strumento per fare in modo che il lavoro sia ben comprensibile non solo a se stessi, 
+        ma anche agli altri, specie se si lavora in un team.
+    </p>
+    <p>Ne consegue che una pagina ricca di commenti però risulterebbe confusionaria e difficile da leggere, quindi il consiglio è quello di essere
+        sintetici e di non commentare anche le cose che sono scontate.
+    </p>
+    <p>I commenti possono essere inseriti in modalità single line o multi-line in base alla lunghezza e complessità di esso. Riportiamo due brevi esempi:</p>
+    <p class="esempio">
+        let nome="Simone" // Ho inserito il mio nome  // Col doppio slash mettiamo un commento single line; <br>
+        let nome="Simone" /* Ho inserito il mio <br>
+        nome */       // Con asterisco slash inseriamo un commento multi-line;
+        </p>
+    <a href="#" class="btn btn-primary chiudiCommenti">Chiudi</a>
+
+</div>
+<!--Commenti-->
+
+
+<!--Array-->
+<div id="array">
+    <h3>Array</h3>
+    <p>Gli array vengono usati per immagazzinare più valori in una singola variabile e vengono inseriti generalmente all'interno delle parentesi quadre. Esempio:</p>
+    <p class="esempio">
+        let numeri=[1,2,3]
+    </p>
+    <p>I valori inseriti hanno un indice di appartenenza che parte dallo 0, quindi nel caso del nostro esempio gli indici sono tre : 0,1,2</p>
+    <p class="esempio">let numeri=[1,2,3]; <br>
+        numeri[0] // 1 <br>
+        numeri[1] // 2 <br>
+        numeri[2] // 3 <br>
+
+        //Gli indici vengono specificati all'interno delle parentesi quadre
+    
+    </p>
+    <p>Gli array sono particolari tipi di oggetti, infatti usando il metodo <span>typeof</span> il valore sarà <span>object.</span></p>
+    
+    
+    <!--Metodi-->
+    <div id="metodi">
+    <h3>Metodi</h3>
+
+    <p>Possiamo lavorare con gli array utilizzando dei metodi che ci consentono di aggiungere, modificare ed eliminare valori:</p>
+    <h5 class="method">.length</h5>
+    <p>Metodo che ci aiuta a capire quanti elementi sono inseriti all'interno di un array</p>
+    <p class="esempio">
+        let nomi=["Marco","Mattia","Simone"] <br>
+        console.log(nomi.length) // 3
+    </p>
+
+    <h5 class="method">pop()</h5>
+    <p>Pop è un metodo che ci elimina l'ultimo elemento di un array</p>
+    <p class="esempio">
+        let nomi=["Simone","Luca", "Alberto"] <br>
+        console.log(nomi.pop()) // ["Ciccio"]
+    </p>
+
+    <h5 class="method">push()</h5>
+    <p>Push è un metodo che ci permette di aggiungere un elemento alla fine dell'array</p>
+    <p class="esempio">
+        let nomi=["Simone","Luca", "Alberto"] <br>
+       nomi.push("Matteo"); <br>
+       console.log(nomi) // ["Simone","Luca","Alberto", "Matteo"]
+    </p>
+
+    <h5 class="method">shift()</h5>
+    <p>Shift ci permette invece di eliminare il primo elemento dell'array</p>
+    <p class="esempio">
+        let nomi=["Simone","Luca", "Alberto"] <br>
+        nomi.shift(); <br>
+        console.log(nomi) // ["Luca", "Alberto"]
+    </p>
+
+    <h5 class="method">unshift()</h5>
+    <p>Unshift ci permette di aggiungere un elemento all'inizio dell'array</p>
+    <p class="esempio">
+        let nomi=["Simone","Luca", "Alberto"] <br>
+        nomi.unshift("Lucia"); <br>
+        console.log(nomi) // ["Lucia","Simone","Luca","Alberto"]
+    </p>
+
+    <h5 class="method">splice()</h5>
+    <p>Questo metodo ci aiuta ad aggiungere nuovi elementi all'interno dell'array nella posizione a noi preferita. 
+        Oltre ai nuovi elementi da aggiungere è regola inserire la posizione dove andranno inseriti ed eventualmente quanti elementi andranno eliminati.
+    </p>
+    <p class="esempio">
+        
+        let frutta=["Mango","Fragola","Uva"]; <br>
+        frutta.splice(1,0,"Mela","Pera"); <br>
+        console.log(frutta) // "Mango","Mela", "Pera", "Fragola","Uva"; <br>
+        frutta.splice(3,2,"Melone","Banana"); <br>
+        console.log(frutta) // "Mango","Mela", "Pera", "Melone" , "Banana"
+
+    </p>
+
+
+    <h5 class="method">concat()</h5>
+    <p>Questo metodo ci aiuta a concatenare più array.</p>
+    <p class="esempio">
+
+        let arr1=[1,2,3]; <br>
+        let arr2=[4,5,6]; <br>
+        let arr3=[7,8,9]; <br>
+        let concatenazione=arr1.concat(arr2,arr3); <br>
+        console.log(concatenazione) // 1,2,3,4,5,6,7,8,9
+    </p>
+
+
+    <h5 class="method">slice()</h5>
+    <p>Slice viene letteralmente tradotto in "fetta" ed è proprio quello che va a fare questo metodo. Infatti va a prendere un pezzo 
+        dell'array secondo le coordinate da noi date, in modo tale da creare un nuovo array. I parametri inseriti all'interno sono due: 
+        col primo andiamo ad indicare l'indice di partenza d'inizio del nuovo array, mentre il secondo indica la fine, che perà non verrà inclusa all'interno dell'array
+    </p>
+    <p class="esempio">
+
+        let numeri=[1,2,3,4,5,6,7,8,9]; <br>
+        let numeriScelti=numeri.slice(2,6); <br>
+        console.log(numeriScelti) // 3,4,5,6
+
+    </p>
+
+
+    <h5 class="method">sort()</h5>
+    <p>Sort ci permette di ordinare un array in maniera crescente o descrescente in base alle nostre preferenze. Utilizzato senza una funzione l'ordine degli elementi non sarà perfetto. Ad esempio:</p>
+
+    <p class="esempio">
+
+        let numeri=[1,7,9,2,3]; <br>
+        let numeriOrdinati=numeri.sort(); <br>
+        console.log(numeriOrdinati) // 1,2,3,7,9 <br>
+<br>
+        let numeri=[1,7,9,2,3,10,20]; <br>
+        let numeriOrdinati=numeri.sort(); <br>
+        console.log(numeriOrdinati) // 1,10,2,20,3,7,9  <br>
+
+        
+    </p>
+    <p>Risulta evidente che il secondo esempio non è per nulla un array ben ordinato. Per ovviare al problema possiamo inserire una funzione che ci aiuta:</p>
+    <p class="esempio">
+        
+        let numeri=[1,7,9,2,3,10,20]; <br>
+        let numeriOrdinati=numeri.sort(function (a,b){ <br>
+            return a - b; <br>
+        }) <br>
+        console.log(numeriOrdinati) //1,2,3,7,9,10,20
+
+    </p>
+    <p>Possiamo anche ordinare in maniera decrescente:</p>
+    <p class="esempio">
+        let numeri=[1,7,9,2,3,10,20]; <br>
+        let numeriOrdinati=numeri.sort(function (a,b){ <br>
+            return b - a; <br>
+        }) <br>
+        console.log(numeriOrdinati) // 20,10,9,7,3,2,1
+
+    </p>
+    <h5 class="method">split()</h5>
+    <p>Split ci aiuta a dividere una stringa e trasformarla in un array, in modo tale da poterla lavorare a nostro piacimento. Ad esempio:</p>
+    <p class="esempio">
+
+        let frase="Questa estate sono stato a mare"; <br>
+        console.log(frase.split(' ')) // ["Questa" , "estate", "sono" , "stato", "a", "mare"]
+
+    </p>
+
+
+    <h5 class="method">join()</h5>
+    <p>Join è un metodo che ci aiuta a unire gli elementi di un array in modo tale da farlo diventare una stringa.</p>
+    <p class="esempio">
+
+         let frase=["Ciao","Simone"] <br>
+         console.log(frase.join(' ')) // "Ciao Simone"
+
+    </p>
+
+
+    <h5 class="method">reverse()</h5>
+    <p>Con questo metodo abbiamo la possibilità di invertire l'ordine degli elementi di un array</p>
+    <p class="esempio">
+
+       let numeri=[1,2,3,4]; <br>
+       console.log(numeri.reverse()) // 4,3,2,1
+
+    </p>
+
+    <h4>Metodi ES6</h4>
+
+    <h5 class="method">forEach()</h5>
+    <p>Il metodo forEach ha le stesse funzioni del ciclo <span>for</span> ma con il grande vantaggio di avere una sintassi decisamente più leggera</p>
+    <p class="esempio">
+
+        let numeri=[1,2,3,4]; <br>
+        numeri.forEach(numero=>{ <br>
+            console.log(numero * 2); //2,4,6,8
+            <br>
+        })
+
+    </p>
+
+
+
+    <h5 class="method">map()</h5>
+    <p>Con il metodo map andremo a creare un nuovo array di cui contenuto sarà riempito dai dati lavorati dell'elemento chiamante. Ad esempio:</p>
+    <p class="esempio">
+        let numeri=[1,2,3,4]; <br>
+        let moltiplicati=numeri.map(x=>{ <br>
+            return Math.pow(x,2);<br>
+        })
+        console.log(moltiplicati); // 1,4,9,16
+    </p>
+
+
+
+    <h5 class="method">filter()</h5>
+    <p>Con il metodo filter andremo a creare un nuovo array che conterrà i dati che abbiano passato il test implementato all'interno di una funzione.</p>
+    <p class="esempio">
+
+        let numeri=[15,7,5,11,20,30,1]; <br>
+        let overSize=numeri.filter(numero=>{ <br>
+        return numero >= 11; <br>
+        }) <br>
+        console.log(overSize);
+
+    </p>
+     
+
+    <h5 class="method">reduce()</h5>
+    <p>Il metodo reduce() in JavaScript viene utilizzato con gli array. Riduce l’array a un singolo valore dopo l’iterazione su ogni elemento. 
+        Questo metodo accetta una funzione di callback come parametro.</p>
+    <p class="esempio">let numeri=[15,7,5]; <br>
+        let ridotto=numeri.reduce((previousValue, currentValue)=>{ <br>
+            return previousValue+currentValue <br>
+        }) <br>
+        console.log(ridotto); // 27</p>
+
+        <p>Oltre alla funzione di callback, reduce ha un parametro aggiuntivo che imposta un valore iniziale per l’accumulatore. 
+            Se questo parametro viene utilizzato, il contenuto viene passato al totale aggiunto al primo elemento dell’array.</p>
+            <p class="esempio">
+
+                let numeri=[15,7,5]; <br>
+        let ridotto=numeri.reduce((previousValue, currentValue)=>{ <br>
+            return previousValue+currentValue <br>
+        },5) <br>
+        console.log(ridotto); // 32
+            </p>
+
+            <p>Oltre ad essere dei metodi che ci semplificano lo sviluppo del codice, il fatto molto interessante è che possono essere 
+                utilizzati tutti insieme ad esempio nel seguente modo:
+            </p>
+            <p class="esempio">
+                let numeri=[10,2,8,13,14,27,35]; <br>
+                let result=numeri <br>
+                .filter(x=> x %2 ===0) <br>
+                .map(x =>x*3) <br>
+                .reduce((y,z)=>{ <br>
+                  return y+z <br>
+                }) <br>
+                console.log(result); // 102
+            </p>
+
+            <h5 class="method">every()</h5>
+            <p>Citiamo questo penultimo metodo che non fa altro che ritornare <span>true</span> o <span>false</span> nel caso in cui <span>ogni</span>
+            elemento soddisfi la condizione. Ad esempio:</p>
+            <p class="esempio">
+                let numeri=[10,2,8,13,14,27,35]; <br>
+                console.log(numeri.every(x=>x > 0)); // true
+            </p>
+
+
+            <h5 class="method">some()</h5>
+            <p>Quest'ultimo metodo non fa altro che ritornare un booleano nel caso in cui <span>almeno</span> un elemento 
+            soddisfi la condizione. Ad esempio:</p>
+            <p class="esempio">
+                let numeri=[10,2,8,13,14,27,35]; <br>
+                console.log(numeri.some(x=>x > 100)); // false
+            </p>
+
+
+        </div> 
+    <!--Metodi-->
+
+<a href="#" class="btn btn-primary chiudiArray">Chiudi</a>
+</div>
+<!--Array-->
+
+
+
+
+<!--Oggetti-->
+<div id="oggetti">
+    <h3>Oggetti</h3>
+    <p>Possiamo affermare che tutto ciò che non è nella categoria dei valori primitivi, è un oggetto. Possiamo definire esso come un contenitore
+        in cui al suo interno possiamo inserire dati riguardanti ad esempio un auto, una persona, una pianta, un animale, ecc. I dati che verranno inseriti
+        all'interno di questo contenitore, sono distinti in coppie chiave-valore, mentre le funzionalità che possiamo adoperare vengono definiti
+        metodo che non sono altro che delle funzioni. I dati dovranno essere inseriti all'interno delle parentesi graffe e per richiamare una proprietà useremo la dot notation. Ad esempio:
+    </p>
+    <p class="esempio">
+
+        let persona={ <br>
+            "nome":"Simone", <br>
+            "cognome":"De Bartolo", <br>
+            chiSei(){ <br>
+                console.log(this.nome +" " + this.cognome); <br>
+        
+            } <br>
+        } <br>
+        //per richiamare una proprietà utilizziamo la dot notation <br>
+        persona.chiSei() // Simone De Bartolo<br> 
+
+    </p>
+    <p>Possiamo anche successivamente aggiungere delle proprietà agli oggetti. Ad esempio nell'oggetto precedente vogliamo aggiungere una proprietà:</p>
+    <p class="esempio">
+        persona.età=32; <br>
+        console.log(persona.età); // 32
+
+    </p>
+    <p>Come abbiamo potuto notare in precedenza, nel metodo chiSei() ho utilizzato la parola chiave <span>this</span>. Questa parola chiave rappresenta l’oggetto a cui appartiene il metodo invocato.</p>
+    <p class="esempio">
+        chiSei(){ <br>
+            console.log(this.nome +" " + this.cognome); <br>
+    
+        }
+    </p>
+
+    <h3>Costruttori</h3>
+    <p>Per evitare di andare a riscrivere ogni volta un oggetto da capo, possiamo andare a creare un <span>costruttore</span> che ci consente
+    di andare a creare altri oggetti dall'oggetto padre. Questi nuovi oggetti figli verranno definiti come <span>istanze.</span></p>
+    <p class="esempio">
+
+        function Persona(nome,cognome,indirizzo){ <br>    //Per convenzione la prima lettera del nome del costruttore inizia con la lettera maiuscola
+            this.nome=nome; <br>
+            this.cognome=cognome; <br>
+            this.indirizzo=indirizzo; <br>
+            this.descrizione= ()=>{ <br>
+                  return `${this.nome} ${this.cognome} risiede all'indirizzo ${this.indirizzo}` <br>
+            } <br>
+        } <br>
+        let simone=new persona("Simone", "De Bartolo", "Via dei Sassi"); <br>
+        console.log(simone.descrizione()); // Simone De Bartolo risiede all'indirizzo Via dei Sassi
+
+    </p>
+    <h3>Oggetti annidati</h3>
+    <p>Possiamo definire anche oggetti di oggetti, cioè oggetti che sono annidati all'interno di altri oggetti. Facciamo un esempio al riguardo:</p>
+    <p class="esempio">
+
+        let persona={ <br>
+            "nome":"Simone", <br>
+            "cognome":"De Bartolo", <br>
+            "età":31, <br>
+            "lavoro":{ <br>
+                "nomeAzienda":"PGStudio", <br>
+                "anniServizio":2, <br>
+                "sede":"Catania" <br>
+            }, <br>
+            descrizione(){ <br>
+                return `${this.nome} ${this.cognome} di età ${this.età}` <br>
+            } <br>
+        } <br>
+         <br>
+        console.log(persona.descrizione());<br>
+        console.log(persona.lavoro["nomeAzienda"]); <br>
+        
+
+    </p>
+
+    <h3>Classi</h3>
+    <p>Con l'avvento di ECMAScript 2015 (ES6) è stata introdotta la keyword <span>class</span>, questa nuova chiave non introduce nessun 
+        nuova classe in JavaScript, rappresenta semplicemente un modo più semplice e pulito per creare oggetti e favorire l’ereditarietà tra oggetti (si parla di oggetti, non di classi).</p>
+    <p>Per dichiarare una classe tramite le class declarations si utilizza la chiave class seguita dal nome della classe. Ad esempio:</p>
+    <p class="esempio">
+        class Persona { <br>
+            constructor(nome,cognome,indirizzo){ <br>
+                this.nome=nome; <br>
+                this.cognome=cognome; <br>
+                this.indirizzo=indirizzo; <br>
+            } <br>
+            descrizione(){ <br>
+                return `${this.nome} ${this.cognome} ${this.indirizzo}` <br>
+            } <br>
+        }
+    </p>
+    <p>Possiamo anche estendere una classe per risparmiare righe di codice che risulterebbe inutile. Ad esempio estendiamo la classe <span>Persona</span> 
+    utilizzando la keyword extends e utilizzando il <span>super</span>:</p>
+    <p class="esempio">
+
+        class Dipendente extends Persona{ <br>
+            constructor(nome,cognome,indirizzo,matricola){ <br>
+                super(nome,cognome,indirizzo); <br>
+                this.matricola=matricola; <br>
+            } <br>
+            chiSei(){ <br>
+                return `${this.nome} ${this.cognome} residente in ${this.indirizzo} è la matricola numero ${this.matricola}` <br>
+            } <br>
+        } <br>    
+        <br>
+        let Lucia=new Dipendente("Lucia", "Brischetto", "Via Petralia", 107) <br>
+        console.log(Lucia.chiSei()); // Lucia Brischetto residente in Via Petralia è la matricola 107
+
+    </p>
+    <a href="#" class="btn btn-primary chiudiOggetti">Chiudi</a>
+
+</div>
+
+<!--oggetti-->
+
+<!--funzioni-->
+<div id="funzioni">
+<h3>Funzioni</h3>
+<p>Le funzioni in JavaScript sono dei blocchi di codice fondamentali, costituite da una o più istruzioni, che svolgono una
+     o più azioni.
+Una funzione in JavaScript si definisce attraverso la parola chiave function seguita dal nome della funzione e dagli 
+argomenti, comunque opzionali, racchiusi tra parentesi tonde e separati dalla virgola. Le istruzioni si inseriscono poi tra le parentesi graffe.
+Per richiamare una funzione poi basterà indicare il nome della funzione e tra parentesi tonde gli argomenti, se ce ne sono.</p>
+<p class="esempio">
+    function scriviQualcosa (){ <br>
+        //istruzioni <br>
+    } <br>   //Qui termina il processo di DICHIARAZIONE della funzione
+    console.log(scriviQualcosa()) // qui viene specificato il processo di INVOCAZIONE della funzione
+</p>
+
+<p>Possiamo anche sfruttare il metodo return che ci restituirà un valore o dei dati. Ad esempio:</p>
+<p class="esempio">
+    function addizione(a,b){ <br>
+        return a+b; <br>
+    } <br>
+
+    let somma=addizione(5,3)
+    console.log(somma) // 8
+</p>
+<p>Come avrete notato abbiamo inserito dei dati all'interno delle parentesi tonde. Questi non sono altro che i <span>parametri</span>. 
+    Essi sono una lista opzionale di variabili separati da virgole che verranno utilizzate all’interno del corpo della funzione</p>
+    <h4>Argomenti con valori di default</h4>
+    <p>Con l’avvento di ECMAScript 6 vengono introdotti altri elementi che arricchiscono la flessibilità della gestione degli argomenti di una funzione. 
+        In particolare viene introdotta la possibilità di specificare dei valori di default:</p>
+        <p class="esempio">
+            function somma(a=0,b=5){ // In questo caso stiamo dicendo che di default a avrà come valore 0 e b avrà come valore 5 <br>
+                return a+b; <br>
+            } <br>
+            <br>
+            let addiziona=somma(); <br>
+            console.log(addiziona); // 6 
+            let addizionaTu=somma(5,6);
+            console.log(addizionaTu);  // 11
+
+        </p>
+    <h4>Rest parameter</h4>
+    <p>Altra novità introdotta con la nuova versione dello standard è la possibilità di specificare il cosiddetto rest parameter. Si tratta di una 
+        notazione speciale per indicare un elenco indefinito di argomenti aggiuntivi. Vediamo di cosa si tratta con un esempio.</p> 
+     <p class="esempio">
+        function moltiplica(x,...y){ <br>
+            let aaa=0 <br>
+            console.log(x); // 8 <br> 
+        <br>
+           for(let i in y){ <br>
+                aaa+=y[i]; <br>
+           } <br>
+           return aaa+x <br>
+        } <br>
+        console.log(moltiplica(8,2,5,8,10)); // 33
+        
+     </p>      
+     <h4>Spread operator</h4>
+     <p>La stessa notazione del rest parameter può essere utilizzata nelle chiamate a funzioni che prevedono diversi argomenti.
+          In questo caso si parla di spread operator, cioè di un operatore che sparge i valori contenuti in un array sugli argomenti di una
+           funzione, come nel seguente esempio:</p>
+           <p class="esempio">
+            function moltiplica(...y){ <br>
+                let risultato=1; <br>
+                for(let i in y){ <br>
+            risultato*=y[i] <br>
+                } <br>
+                return risultato <br>
+            } <br>
+            console.log(moltiplica(1,2,3,4));  // 24
+            
+           </p>
+<a href="#" class="btn btn-primary chiudiFunzioni">Chiudi</a>
+</div>
+
+<!--funzioni-->
+<div id="cicli">
+    <h3>Cicli</h3>
+    <p>Per tanti motivi nel corso della scrittura del nostro progetto, potremmo avere l'esigenza di ripetere una serie di istruzioni e, 
+        scrivere ogni volta queste istruzioni potrebbe risultare problematico. Per questo javascript ci viene in aiuto con i cicli, che ci 
+        permettono di adottare degli automatismi tali da ripetere le istruzioni senza andarci a perdere in decine di inutili righe di codice.
+    </p> 
+    <h4>For</h4>
+    <p>Il più conosciuto e forse il più praticato ciclo è quello for con cui possiamo eseguire delle istruzioni per un numero di volte da noi definito.
+         Esso in parte è stato soppiantato da nuovi metodi introdotti
+        in ES6 come ad esempio il FOREACH, ma per tanti altri usi viene largamente adoperato. Questo è il suo schema semantico:
+    </p>
+    <p class="esempio">
+        for (inizializzazione; condizione; modifica) { <br>
+            // istruzioni <br>
+        }
+
+    </p>
+    <p>
+        <ul>
+            <li>inizializzazione: JavaScript esegue l’istruzione specificata in inizializzazione prima di avviare le iterazioni (il ciclo).</li>
+            <li>condizione: è l’espressione booleana che viene valutata prima di eseguire ciascuna iterazione. Se è falsa non viene eseguito il blocco 
+                di istruzioni associato al for. Se invece la condizione è vera viene eseguito il blocco di codice.</li>
+            <li> modifica: al termine di ciascuna iterazione viene eseguita l’istruzione modifica (la più classica è l’incremento di un contatore).
+            Il ciclo poi ricomincia con la valutazione della condizione.</li>
+        </ul>
+    </p>
+    <p>Il ciclo for è generalmente comodo per utilizzarlo con gli array. Vediamo un esempio:</p>
+    <p class="esempio">
+        let numeriCasuali=[15,2,8,6]; <br>
+for (let i = 0; i< numeriCasuali.length; i++) { <br>
+  const moltiplica = numeriCasuali[i] * 2; <br>
+  console.log(moltiplica);  // 30,4,16,12<br>
+    }
+    </p>
+    <h4>For..in e For..of</h4>
+    <p>For..in e For..of sono due varianti del ciclo for che ci permettono di risparmiare codice. Vediamo la differenza rispetto l'esempio precedente:</p>
+    <p class="esempio">
+        FOR..IN <br>
+        let moltiplica=0; <br>
+ for (let i in numeriCasuali){ <br>
+     moltiplica=numeriCasuali[i]*2; <br>
+     console.log(moltiplica);  //30,4,16,12 <br>
+ } <br>
+
+
+    FOR...OF <br>
+    let moltiplica=0; <br>
+    for (let i of  numeriCasuali){ <br>
+          moltiplica=i*2; <br> 
+    console.log(moltiplica); // 30,4,16,12 <br>
+ }
+
+    </p>
+
+    <h4>While</h4>
+    <p>Un altro ciclo che è possibile utilizzare è il while. Ecco lo schema sintattico:</p>
+    <p class="esempio">
+        while (condizione) { <br>
+            // istruzioni <br>
+        }
+    </p>
+    <p>Finché condizione sarà vera verranno eseguite le istruzioni contenute nel blocco di codice. 
+        Requisito fondamentale nell’uso del while è che le istruzioni contenute nel blocco di codice modifichino 
+        la condizione, altrimenti si rischia di incorrere in un ciclo infinito.</p>
+        <p class="esempio">
+            let i=0; <br>
+            let y=0; <br>
+
+            while (i<= 5) {  <br>
+            y=i*2 <br>
+            i++; <br>
+            console.log(y); 0,2,4,6,8,10<br>
+    }
+        </p>
+
+        <h4>Do while</h4>
+        <p>Il do while ciclo è una variante del ciclo while. Questo ciclo eseguirà il blocco di codice una volta, 
+            prima di verificare se la condizione è vera, quindi ripeterà il ciclo finché la condizione è vera. Qui lo schema sintattico:</p>
+            <p class="esempio">
+                do { <br>
+                // code block to be executed <br>
+              } <br>
+              while (condition);</p>
+
+              <p>Ecco un esempio:</p>
+              <p class="esempio">
+                let num=0 <br>
+                let i=0; <br>
+                do { <br>
+                  num +=  i; <br>
+                  i++; <br> 
+                  console.log(num); // 0,1,3 <br>
+                } <br>
+                while (i < 3);
+              </p>
+
+    <a href="#" class="btn btn-primary chiudiCicli">Chiudi</a>
+
+</div>
+<!--cicli-->
+</div>
+<!--Main_container-->
+
+<!--Footer-->
+<footer>
+    PGStudio | Via xxx, 000 - 00000 Catania (CT) ITALIA | C.F. ABC000000000 | P.Iva 000000000 <br>
+    <a class="trans-color-text" href="#">info@PGStudio.it</a> | <span itemprop="telephone"><a href="#">+39 0000000000</a></span>
+      <br><a target="_blank" href="#"> privacy</a> | <a target="_blank" href="#"> cookie policy</a>
+
+
+    
+</footer>
+
+
+</div>
+
+<!--Script-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
